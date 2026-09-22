@@ -99,7 +99,7 @@ A característica predominante é **adequação funcional**, com foco na **corre
 
 **Ferramenta utilizada:** ChatGPT.
 
-**Como foi utilizada:** A ferramenta foi utilizada como apoio para interpretar as instruções da atividade, organizar as respostas, conferir os cálculos realizados durante os testes e estruturar a análise da qualidade do LocalEats.
+**Como foi utilizada:** A ferramenta foi utilizada como apoio para organizar as respostas, conferir os cálculos realizados durante os testes e estruturar a análise da qualidade do LocalEats.
 
 **Como as respostas foram verificadas:** As respostas foram conferidas com base nas instruções da atividade e nos resultados observados diretamente na aplicação. Os cálculos dos totais foram realizados e conferidos manualmente a partir dos preços exibidos na interface. As possíveis causas internas para as diferenças não foram tratadas como fatos, pois não houve acesso ao código-fonte ou ao banco de dados da aplicação.
 
@@ -107,7 +107,7 @@ A característica predominante é **adequação funcional**, com foco na **corre
 
 # Evidências
 
-As capturas de tela utilizadas na análise devem ser armazenadas em:
+As capturas de tela utilizadas na análise estão armazenadas em:
 
 `atividades/atividade-01/evidencias/`
 
@@ -121,4 +121,3 @@ Sugestão de nomes de arquivos:
 - `rafaela-prato-especial-3-6-unidades.png`
 - `rafaela-prato-especial-3-7-unidades.png`
 
-As evidências devem ser acompanhadas da explicação correspondente na tabela da Tarefa 2.
