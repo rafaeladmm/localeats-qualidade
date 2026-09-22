@@ -111,13 +111,3 @@ As capturas de tela utilizadas na análise estão armazenadas em:
 
 `atividades/atividade-01/evidencias/`
 
-Sugestão de nomes de arquivos:
-
-- `rafaela-prato-especial-3-1-unidade.png`
-- `rafaela-prato-especial-3-2-unidades.png`
-- `rafaela-prato-especial-3-3-unidades.png`
-- `rafaela-prato-especial-3-4-unidades.png`
-- `rafaela-prato-especial-3-5-unidades.png`
-- `rafaela-prato-especial-3-6-unidades.png`
-- `rafaela-prato-especial-3-7-unidades.png`
-
