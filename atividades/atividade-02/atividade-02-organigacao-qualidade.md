@@ -64,11 +64,13 @@ Embora o QA tenha responsabilidades específicas de qualidade, isso não signifi
 | Planejar e executar testes do sistema | I | C | C | R/A |
 | Registrar e acompanhar defeitos | I | C | C | R/A |
 | Priorizar a correção dos defeitos | A | C | C | R |
-| Aprovar a disponibilização da versão | A | C | R | C |
+| Aprovar a disponibilização da versão | R/A | C | I | C |
 
 ## Justificativa da distribuição
 
 A distribuição procura evitar que todas as atividades de qualidade sejam concentradas no QA. O responsável pelo produto participa das decisões relacionadas aos critérios, prioridades e aprovação da versão. O analista contribui principalmente na análise e revisão dos requisitos. O desenvolvedor é responsável pela implementação e por atividades de qualidade relacionadas ao código e aos testes unitários. O QA concentra as atividades de teste do sistema e o registro e acompanhamento dos defeitos, mas participa também de outras etapas como consultado.
+
+Na aprovação da disponibilização da versão, o responsável pelo produto atua como **R/A**, pois conduz e responde pela decisão final de disponibilização. O QA participa como **C**, contribuindo com os resultados dos testes, enquanto o desenvolvedor é **I**, sendo informado sobre a decisão.
 
 ---
 
@@ -97,6 +99,6 @@ As práticas propostas envolvem mais de um papel e fazem com que a qualidade sej
 
 **Ferramenta utilizada:** ChatGPT.
 
-**Como foi utilizada:** A ferramenta foi utilizada como apoio para organizar as respostas, estruturar a análise dos papéis e responsabilidades e revisar a coerência da matriz RACI.
+**Como foi utilizada:** A ferramenta foi utilizada como apoio para interpretar o enunciado da atividade, organizar as respostas, estruturar a análise dos papéis e responsabilidades e revisar a coerência da matriz RACI.
 
 **Como as respostas foram verificadas:** As sugestões foram comparadas com as situações, orientações, papéis e regras apresentados no enunciado da atividade. A matriz foi revisada para verificar se cada atividade possui pelo menos um responsável (R) e um único aprovador (A), conforme as regras da atividade. As decisões foram analisadas e ajustadas para manter a qualidade como responsabilidade compartilhada, evitando concentrar todas as responsabilidades no QA.
