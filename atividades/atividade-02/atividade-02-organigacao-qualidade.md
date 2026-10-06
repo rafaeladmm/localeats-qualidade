@@ -20,7 +20,11 @@
 
 ### A qualidade do LocalEats deve ser responsabilidade exclusiva do profissional de QA?
 
-Não. A qualidade deve ser uma responsabilidade compartilhada entre os diferentes papéis envolvidos no desenvolvimento. O QA possui responsabilidades específicas relacionadas ao planejamento e execução de testes e à identificação de problemas, mas desenvolvedores, analistas, responsável pelo produto e demais envolvidos também contribuem para a qualidade. A definição de critérios, a revisão dos requisitos, a implementação e o acompanhamento dos defeitos também influenciam diretamente o resultado do produto.
+Não. A qualidade deve ser uma responsabilidade compartilhada entre os diferentes papéis envolvidos no desenvolvimento.
+
+O QA possui responsabilidades específicas relacionadas ao planejamento e execução de testes e à identificação de problemas, mas desenvolvedores, analistas, responsável pelo produto e demais envolvidos também contribuem para a qualidade.
+
+A definição de critérios, a revisão dos requisitos, a implementação e o acompanhamento dos defeitos também influenciam diretamente o resultado do produto.
 
 ---
 
@@ -34,7 +38,9 @@ Como a atividade está sendo realizada individualmente, foi analisado um papel, 
 
 ### Observação
 
-Embora o QA tenha responsabilidades específicas de qualidade, isso não significa que ele seja o único responsável pela qualidade do produto. A organização proposta mantém a responsabilidade compartilhada entre os papéis definidos na matriz RACI.
+Embora o QA tenha responsabilidades específicas de qualidade, isso não significa que ele seja o único responsável pela qualidade do produto.
+
+A organização proposta mantém a responsabilidade compartilhada entre os papéis definidos na matriz RACI.
 
 ---
 
@@ -68,17 +74,29 @@ Embora o QA tenha responsabilidades específicas de qualidade, isso não signifi
 
 ## Justificativa da distribuição
 
-A distribuição procura evitar que todas as atividades de qualidade sejam concentradas no QA. O responsável pelo produto participa das decisões relacionadas aos critérios, prioridades e aprovação da versão. O analista contribui principalmente na análise e revisão dos requisitos. O desenvolvedor é responsável pela implementação e por atividades de qualidade relacionadas ao código e aos testes unitários. O QA concentra as atividades de teste do sistema e o registro e acompanhamento dos defeitos, mas participa também de outras etapas como consultado.
+A distribuição procura evitar que todas as atividades de qualidade sejam concentradas no QA.
 
-Na aprovação da disponibilização da versão, o responsável pelo produto atua como **R/A**, pois conduz e responde pela decisão final de disponibilização. O QA participa como **C**, contribuindo com os resultados dos testes, enquanto o desenvolvedor é **I**, sendo informado sobre a decisão.
+O responsável pelo produto participa das decisões relacionadas aos critérios, prioridades e aprovação da versão. O analista contribui principalmente na análise e revisão dos requisitos.
+
+O desenvolvedor é responsável pela implementação e por atividades de qualidade relacionadas ao código e aos testes unitários.
+
+O QA concentra algumas atividades específicas, como o planejamento e execução dos testes do sistema e o registro e acompanhamento dos defeitos, mas a qualidade continua sendo uma responsabilidade compartilhada entre os diferentes papéis.
+
+Na aprovação da disponibilização da versão, o responsável pelo produto atua como **R/A**, pois conduz e responde pela decisão final de disponibilização.
+
+O QA participa como **C**, contribuindo com os resultados dos testes, enquanto o desenvolvedor é **I**, sendo informado sobre a decisão.
 
 ---
 
 # Lacuna ou conflito encontrado
 
-Uma possível lacuna identificada é a **definição dos critérios de aceitação**. Caso esses critérios não sejam definidos e revisados antes da implementação, o QA pode receber uma funcionalidade para testar sem possuir uma referência suficientemente clara para determinar se ela atende ao esperado.
+Uma possível lacuna identificada é a **definição dos critérios de aceitação**.
 
-Para evitar esse problema, o responsável pelo produto e o analista devem participar da definição e revisão dos critérios, com contribuição do desenvolvedor e do QA. Dessa forma, a equipe possui uma referência comum para desenvolvimento e testes.
+Caso esses critérios não sejam definidos e revisados antes da implementação, o QA pode receber uma funcionalidade para testar sem possuir uma referência suficientemente clara para determinar se ela atende ao esperado.
+
+Para evitar esse problema, o responsável pelo produto e o analista devem participar da definição e revisão dos critérios, com contribuição do desenvolvedor e do QA.
+
+Dessa forma, a equipe possui uma referência comum para desenvolvimento e testes.
 
 ---
 
@@ -91,7 +109,9 @@ Para evitar esse problema, o responsável pelo produto e o analista devem partic
 
 ### Como essas práticas favorecem a responsabilidade compartilhada
 
-As práticas propostas envolvem mais de um papel e fazem com que a qualidade seja considerada durante diferentes etapas do desenvolvimento. A definição dos critérios de aceitação ocorre antes dos testes e envolve diferentes participantes, enquanto o registro e acompanhamento dos defeitos permite que o problema seja conhecido e tratado pelos responsáveis pela correção e pelas decisões de prioridade.
+As práticas propostas envolvem mais de um papel e fazem com que a qualidade seja considerada durante diferentes etapas do desenvolvimento.
+
+A definição dos critérios de aceitação ocorre antes dos testes e envolve diferentes participantes, enquanto o registro e acompanhamento dos defeitos permite que o problema seja conhecido e tratado pelos responsáveis pela correção e pelas decisões de prioridade.
 
 ---
 
@@ -101,4 +121,8 @@ As práticas propostas envolvem mais de um papel e fazem com que a qualidade sej
 
 **Como foi utilizada:** A ferramenta foi utilizada como apoio para interpretar o enunciado da atividade, organizar as respostas, estruturar a análise dos papéis e responsabilidades e revisar a coerência da matriz RACI.
 
-**Como as respostas foram verificadas:** As sugestões foram comparadas com as situações, orientações, papéis e regras apresentados no enunciado da atividade. A matriz foi revisada para verificar se cada atividade possui pelo menos um responsável (R) e um único aprovador (A), conforme as regras da atividade. As decisões foram analisadas e ajustadas para manter a qualidade como responsabilidade compartilhada, evitando concentrar todas as responsabilidades no QA.
+**Como as respostas foram verificadas:** As sugestões foram comparadas com as situações, orientações, papéis e regras apresentados no enunciado da atividade.
+
+A matriz foi revisada para verificar se cada atividade possui pelo menos um responsável (R) e um único aprovador (A), conforme as regras da atividade.
+
+As decisões foram analisadas e ajustadas para manter a qualidade como responsabilidade compartilhada, evitando concentrar todas as responsabilidades no QA.
