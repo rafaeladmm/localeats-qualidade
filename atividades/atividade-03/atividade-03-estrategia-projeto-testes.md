@@ -14,7 +14,9 @@
 
 ## 1.1 Objetivo dos testes
 
-Verificar se a funcionalidade de **fazer pedido** apresenta resultados consistentes para diferentes formas de composição do pedido, principalmente em relação ao cálculo e à apresentação do valor total. O planejamento busca priorizar situações com potencial de gerar divergências no valor apresentado ao usuário e definir casos de teste representativos para essas situações.
+Verificar se a funcionalidade de **fazer pedido** apresenta resultados consistentes para diferentes formas de composição do pedido, principalmente em relação ao cálculo e à apresentação do valor total.
+
+O planejamento busca priorizar situações com potencial de gerar divergências no valor apresentado ao usuário e definir casos de teste representativos para essas situações.
 
 ## 1.2 Escopo
 
@@ -35,7 +37,7 @@ Verificar se a funcionalidade de **fazer pedido** apresenta resultados consisten
 | Níveis de teste | Sistema | A funcionalidade será analisada pelo fluxo completo disponível na interface do LocalEats, verificando as entradas fornecidas pelo usuário e os resultados apresentados pelo sistema. |
 | Tipos de teste | Funcional | O foco está em verificar o comportamento esperado da funcionalidade de fazer pedido e do cálculo apresentado ao usuário. |
 | Perspectiva caixa-preta ou caixa-branca | Caixa-preta | Os testes serão projetados a partir das entradas e dos resultados observáveis na interface, sem considerar a implementação interna do sistema. |
-| Técnica de teste | Particionamento de equivalência | A técnica permite organizar diferentes formas de composição do pedido em classes representativas, evitando a necessidade de testar todas as combinações possíveis. |
+| Técnica de teste | Tabela de decisão | A técnica permite representar diferentes combinações de condições do pedido e relacioná-las aos resultados esperados, mantendo os casos de teste vinculados aos riscos identificados. |
 
 ## 1.4 Ambiente e responsabilidades
 
@@ -76,7 +78,9 @@ Verificar se a funcionalidade de **fazer pedido** apresenta resultados consisten
 
 ### Por que a técnica foi escolhida?
 
-A tabela de decisão é adequada porque o resultado esperado do total depende da combinação de condições do pedido, como a quantidade de produtos e a quantidade selecionada para cada item. A técnica permite representar diferentes combinações de condições e relacioná-las aos comportamentos esperados, mantendo os casos de teste vinculados aos riscos identificados.
+A tabela de decisão é adequada porque o resultado esperado do total depende da combinação de condições do pedido, como a quantidade de produtos e a quantidade selecionada para cada item.
+
+A técnica permite representar diferentes combinações de condições e relacioná-las aos comportamentos esperados, mantendo os casos de teste vinculados aos riscos identificados.
 
 ### Aplicação da técnica
 
@@ -98,6 +102,8 @@ Foram consideradas duas condições observáveis no fluxo de pedido:
 - **CT02:** Verificar o total após aumentar a quantidade de um produto — relacionado à regra R2.
 - **CT03:** Verificar o total de um pedido com produtos diferentes — relacionado às regras R3/R4.
 
+---
+
 # Tarefa 3: Casos de teste e rastreabilidade
 
 ## 3.1 Especificação dos casos de teste
@@ -110,21 +116,25 @@ Foram consideradas duas condições observáveis no fluxo de pedido:
 **Técnica utilizada:** Tabela de decisão
 
 **Pré-condição:**
+
 - A aplicação está disponível.
 - Existe pelo menos um produto disponível para seleção.
 - O usuário consegue acessar o fluxo de fazer pedido.
 
 **Dados de entrada:**
+
 - Um produto disponível.
 - Quantidade: 1 unidade.
 
 **Passos:**
+
 1. Acessar a funcionalidade de fazer pedido.
 2. Selecionar um produto disponível.
 3. Adicionar uma unidade do produto ao pedido.
 4. Consultar o total apresentado pelo sistema.
 
 **Resultado esperado:**
+
 O total apresentado deve corresponder ao valor do produto selecionado para a quantidade de uma unidade.
 
 ---
@@ -137,15 +147,18 @@ O total apresentado deve corresponder ao valor do produto selecionado para a qua
 **Técnica utilizada:** Tabela de decisão
 
 **Pré-condição:**
+
 - A aplicação está disponível.
 - Existe pelo menos um produto disponível para seleção.
 - O usuário consegue acessar o fluxo de fazer pedido.
 
 **Dados de entrada:**
+
 - Um produto disponível.
 - Quantidade: 2 ou mais unidades.
 
 **Passos:**
+
 1. Acessar a funcionalidade de fazer pedido.
 2. Selecionar um produto disponível.
 3. Alterar a quantidade do produto para mais de uma unidade.
@@ -153,6 +166,7 @@ O total apresentado deve corresponder ao valor do produto selecionado para a qua
 5. Comparar o total apresentado com o cálculo obtido a partir do valor unitário exibido e da quantidade selecionada.
 
 **Resultado esperado:**
+
 O total apresentado deve ser atualizado de acordo com a quantidade selecionada e ser consistente com o valor unitário apresentado para o produto.
 
 ---
@@ -165,15 +179,18 @@ O total apresentado deve ser atualizado de acordo com a quantidade selecionada e
 **Técnica utilizada:** Tabela de decisão
 
 **Pré-condição:**
+
 - A aplicação está disponível.
 - Existem pelo menos dois produtos diferentes disponíveis.
 - O usuário consegue acessar o fluxo de fazer pedido.
 
 **Dados de entrada:**
+
 - Dois ou mais produtos diferentes.
 - Quantidades válidas para os produtos selecionados.
 
 **Passos:**
+
 1. Acessar a funcionalidade de fazer pedido.
 2. Selecionar o primeiro produto e adicioná-lo ao pedido.
 3. Selecionar um segundo produto diferente e adicioná-lo ao mesmo pedido.
@@ -182,6 +199,7 @@ O total apresentado deve ser atualizado de acordo com a quantidade selecionada e
 6. Comparar o total apresentado com a soma dos valores esperados para os itens selecionados.
 
 **Resultado esperado:**
+
 O total apresentado deve corresponder à soma dos valores dos produtos e quantidades selecionados no pedido.
 
 > **Observação:** os casos acima são casos planejados e não foram executados nesta atividade, conforme orientação do enunciado. Portanto, não foi incluído resultado obtido, apenas o resultado esperado.
@@ -197,7 +215,9 @@ O total apresentado deve corresponder à soma dos valores dos produtos e quantid
 
 ### Verificação da rastreabilidade
 
-A matriz permite identificar a relação entre a funcionalidade analisada, os riscos, a técnica selecionada e os casos de teste planejados. O risco R01 possui três casos relacionados e o risco R02 possui o CT02 como caso diretamente relacionado.
+A matriz permite identificar a relação entre a funcionalidade analisada, os riscos, a técnica selecionada e os casos de teste planejados.
+
+O risco R01 possui três casos relacionados e o risco R02 possui o CT02 como caso diretamente relacionado.
 
 ---
 
@@ -209,4 +229,6 @@ A matriz permite identificar a relação entre a funcionalidade analisada, os ri
 
 **Uma sugestão que precisou ser alterada ou rejeitada:** A primeira proposta utilizava particionamento de equivalência para separar formas de composição do pedido. Após revisar a aplicação formal da técnica, essa abordagem foi substituída por uma tabela de decisão, pois o risco identificado envolve combinações entre quantidade de produtos e quantidade de unidades.
 
-**Como as respostas foram verificadas:** As decisões foram comparadas diretamente com as orientações da Atividade 3, especialmente quanto à necessidade de selecionar uma funcionalidade, analisar dois riscos, aplicar pelo menos uma técnica, elaborar três casos de teste e manter a rastreabilidade entre funcionalidade, risco, técnica e casos. Os casos foram revisados para conter pré-condições, dados de entrada, passos e resultados esperados observáveis, sem incluir resultados de execução.
+**Como as respostas foram verificadas:** As decisões foram comparadas diretamente com as orientações da Atividade 3, especialmente quanto à necessidade de selecionar uma funcionalidade, analisar dois riscos, aplicar pelo menos uma técnica, elaborar três casos de teste e manter a rastreabilidade entre funcionalidade, risco, técnica e casos.
+
+Os casos foram revisados para conter pré-condições, dados de entrada, passos e resultados esperados observáveis, sem incluir resultados de execução.
